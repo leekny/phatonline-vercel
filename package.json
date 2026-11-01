@@ -1,0 +1,17 @@
+{
+  "name": "tiktok-live-temple-rpc",
+  "version": "1.0.0",
+  "description": "TikTok Live RPC Interactive Buddhist Temple (Bun.js + ZeroTTS + Single-File Windows .exe)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "bun --watch server.js",
+    "build:win": "bun run scripts/embed-assets.js && bun build ./server.js --compile --target=bun-windows-x64 --outfile dist/ChuaLinhUngLive.exe"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "tiktok-live-connector": "^2.1.0",
+    "ws": "^8.18.0"
+  }
+}

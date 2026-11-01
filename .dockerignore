@@ -1,0 +1,10 @@
+.git
+node_modules
+.venv
+data
+docs
+dist
+*.log
+.env
+.env.*
+!.env.example
